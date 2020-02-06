@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name=" Regression Suite">
+  
+  	<listeners>
+  		<listener class-name="com.hrms.testbase.Listener"/>
+    </listeners>
+  
+  <test name="Regression Test">
+  	 <groups>
+  		<run>
+  			<include name="regression"/>              
+  		</run>
+ 	 </groups>
+ 	 
+    <packages>
+      <package name="com.class01"/>
+      <package name="com.class02"/>
+      <package name="com.class03"/>
+      <package name="com.class04"/>
+    </packages>
+  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
